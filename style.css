@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Passion One', cursive;
+  backface-visibility: hidden;
+  background: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.heading {
+  font-size: 14vw;
+  font-weight: 700;
+  text-shadow: 1px 4px 6px #00000093;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.letter {
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 550px;
+  z-index: 1;
+}
+.letter::before {
+  transform: scale(1) skew(0deg, 1deg);
+  color: transparent;
+  text-shadow: 0 0 0 #00000026;
+}
+.letter::after {
+  backface-visibility: hidden;
+  text-shadow: 2px 0 1px #0000000d;
+  transform: rotateY(-15deg);
+  transition: all 0.3s;
+}
+.letter::before, .letter::after {
+  content: attr(data-heading);
+  position: absolute;
+  left: 0;
+  transform-origin: 0 50%;
+  transition: all 0.3s;
+}
+.heading:hover .letter::before {
+  transform: scale(0.9, 1) skew(0deg, 2deg);
+}
+.heading:hover .letter::after {
+  transform: rotateY(-25deg);
+}
+.letter1 {
+  color: #8538ce;
+}
+.heading:hover .letter1 {
+  color: #7225b9;
+}
+.heading:hover .letter1::after {
+  background: linear-gradient(left, #7225b9 0%, #8f3ddb 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letter2 {
+  color: #ee7842;
+}
+.heading:hover .letter2 {
+  color: #c45f30;
+}
+.heading:hover .letter2::after {
+  background: linear-gradient(left, #c45f30 0%, #e77e4d 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letter3 {
+  color: #FFD650;
+}
+.heading:hover .letter3 {
+  color: #FFD23F;
+}
+.heading:hover .letter3::after {
+  background: linear-gradient(left, #FFD23F 0%, #FFDE73 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letter4 {
+  color: #2bb897;
+}
+.heading:hover .letter4 {
+  color: #22997d;
+}
+.heading:hover .letter4::after {
+  background: linear-gradient(left, #22997d 0%, #4ad8b7 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letter5 {
+  color: #dd4f4f;
+}
+.heading:hover .letter5 {
+  color: #bd3939;
+}
+.heading:hover .letter5::after {
+  background: linear-gradient(left, #bd3939 0%, #e75a5a 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letter6 {
+  color: #564bf1;
+}
+.heading:hover .letter6 {
+  color: #4137c7;
+}
+.heading:hover .letter6::after {
+  background: linear-gradient(left, #4137c7 0%, #5a50f1 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letter7 {
+  color: #0EAD69;
+}
+.heading:hover .letter7 {
+  color: #0C8E56;
+}
+.heading:hover .letter7::after {
+  background: linear-gradient(left, #0C8E56 0%, #39BB84 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
